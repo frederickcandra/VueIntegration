@@ -3,7 +3,7 @@
     <h2 class="text-center mb-4">👤 Detail User</h2>
 
     <div v-if="loading" class="text-center">
-      <div class="spinner-border text-primary" role="status">
+      <div class="spinner-border text-primary" role="status" style="width: 3rem; height: 3rem;">
         <span class="visually-hidden">Loading...</span>
       </div>
     </div>
@@ -48,7 +48,7 @@ export default {
         })
         .finally(() => {
           this.loading = false;
-        });
+        }, 1000);
   }
 };
 </script>
