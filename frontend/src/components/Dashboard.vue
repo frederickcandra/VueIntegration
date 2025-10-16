@@ -1,9 +1,16 @@
 <template>
   <div class="dashboard-container">
     <div class="dashboard-header">
-      <img src="../../assets/images/dog-logo.svg" alt="Dog Logo" class="dashboard-logo" />
-      <div class="dashboard-title">DogAPI Explorer</div>
-      <button @click="logout" class="auth-btn" style="height:40px;">Logout</button>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <img src="/src/assets/images/dog-logo.svg" alt="Dog Logo" class="dashboard-logo" style="background:#fff;border-radius:50%;padding:4px;box-shadow:0 2px 8px rgba(44,62,80,0.08);" />
+        <div class="dashboard-title">DogAPI Explorer</div>
+      </div>
+      <button
+          @click="logout"
+          class="auth-btn"
+          style="height:40px; display:flex; align-items:center; justify-content:center;">
+        Logout
+      </button>
     </div>
     <div class="dashboard-content">
       <div class="text-center" style="margin-bottom:2rem;">
