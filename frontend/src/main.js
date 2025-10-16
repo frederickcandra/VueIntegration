@@ -1,4 +1,5 @@
 import './style.css'
+import './assets/styles/auth.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import 'bootstrap/dist/css/bootstrap.css'
